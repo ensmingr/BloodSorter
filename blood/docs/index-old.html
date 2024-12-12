@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+	<title>Blood Reference Levels</title>
+	<link rel="stylesheet" href="css/jq.css" type="text/css" media="print, projection, screen" />
+	<link rel="stylesheet" href="../themes/blue/style.css" type="text/css" media="print, projection, screen" />
+	<script type="text/javascript" src="../jquery-latest.js"></script>
+	<script type="text/javascript" src="../jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="js/chili/chili-1.8b.js"></script>
+	<script type="text/javascript" src="js/docs.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" id="js">
+	$(document).ready(function() {
+    $.tablesorter.defaults.widgets = 'zebra'; 
+    $("tr:odd").addClass("odd");
+    // extend the default setting to always sort on the first column 
+    $.tablesorter.defaults.sortList = 0,0; 
+    // call the tablesorter plugin, the magic happens in the markup
+	$("table").tablesorter({ 
+        // pass the headers argument and assing a object 
+        headers: { 
+            // assign the 3rd column (1st column is zero) 
+            2: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            }, 
+            // assign the 4th column (1st column is zero)
+            3: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            },
+            4: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            } 
+        } 
+    }); 
+}); 
+
+</script>
+<!-- <style>
+#overlay {
+	top: 100px;
+	left: 50%;
+	position: absolute;
+	margin-left: -100px;
+	width: 100px;
+	text-align: center;
+	display: none;
+	margin-top: -10px;
+	background: #000;
+	color: #FFF;}
+</style> -->
+</head>
+<body>
+<!-- <div id="banner"></div>-->
+<div id="main">
+<h1>Blood Reference Levels ............ in progress ...........</h1>
+<h2>
+&gt; Sort by one column: click "Category" or "Component"
+<br />&gt; Sort Components within Categories: click "Category", hold down Shift key, click "Component"
+<br />&gt; Links to more info: <a href="http://en.wikipedia.org/wiki/Main_Page">&nbsp;W&nbsp;</a> Wikipedia, <a href="http://www.nlm.nih.gov/medlineplus/">&nbsp;M&nbsp;</a> MedlinePlus, <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed">&nbsp;P&nbsp;</a> PubMed</h2> 
+
+<!-- sortlist is appended to the table using the class attribute and is picked up by metadata plugin -->
+<table id="table" cellspacing="2" class="tablesorter">
+<thead>
+	<tr>
+		<th>Category</th>
+		<th>Component</th>
+		<th>Reference Range (<i>Harrison's Manual of Medicine, 17th ed</i>)</th>
+		<th>Analyte</th>
+	</tr>
+</thead>
+<!-- <tfoot>
+	<tr>
+		<th>Category</th>
+		<th>Component</th>
+		<th>Reference Range</th>
+		<th>Analyte</th>
+	</tr>	
+</tfoot> -->
+<tbody>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Brain natriuretic peptide (BNP) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/B-type_natriuretic_peptide">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/007509.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Brain%20natriuretic%20peptide%22">P</a></td>
+	<td>age and gender specific: &lt;167 ng/L, &lt;167 pg/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Creatine (phospho)kinase, activity (CPK) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Creatine_kinase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003504.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22creatinine%20kinase%22%20OR%20%22creatinine%20phosphokinase%22">P</a></td>
+	<td>Males: 0.87-5.0 &mu;kat/L, 51-294 U/L<br />Females: 0.66-4.0 &mu;kat/L, 39-238 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Creatine (phospho)kinase-MB, mass &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Creatine_kinase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003504.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22creatinine%20kinase%22%20OR%20%22creatinine%20phosphokinase%22">P</a></td>
+	<td>0-5.5 &mu;g/L, 0-5.5 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Creatine (phospho)kinase-MB, pct. of total activity &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Creatine_kinase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003504.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22creatinine%20kinase%22%20OR%20%22creatinine%20phosphokinase%22">P</a></td>
+	<td>0-4%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Myoglobin &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Myoglobin">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003663.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=myoglobin">P</a></td>
+	<td>Males: 19-92 &mu;g/L<br />Females: 12-76 &mu;g/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Troponin I &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Troponin_I">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/007452.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22troponin%20I%22">P</a></td>
+	<td>Normal, 99th%: 0-0.08 &mu;g/L, 0-0.08 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Cardiac Function</td>
+	<td>Troponin T &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Troponin_T">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/007452.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22troponin%20T%22">P</a></td>
+	<td>Normal, 99th%: 0-0.1 &mu;g/L, 0-0.1 ng/mL</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Coagulation</td>
+	<td>D-dimer &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/D-dimer">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=D-dimer">P</a></td>
+	<td>0.22-0.74 &mu;g/mL, 0.22-0.74 &mu;g/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Fibrinogen &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Fibrinogen">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003650.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=fibrinogen">P</a></td>
+	<td>2.33-4.96 g/L, 233-496 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Fibrin degr. products &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Fibrin_degradation_product">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003655.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22fibrin%20degradation%20product%22">P</a></td>
+	<td>0-1 mg/L, 0-1 &mu;g/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Partial thromboplastin time, act. (aPTT) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Partial_thromboplastin_time">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003653.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Partial%20thromboplastin%20time%22">P</a></td>
+	<td>26.3-39.4 s</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Plasminogen, antigen &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Plasminogen">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=plasminogen">P</a></td>
+	<td>84-140 mg/L, 8.4-14.0 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Plasminogen, functional &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Plasminogen">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=plasminogen">P</a></td>
+	<td>70-130%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Plasminogen activator inhibitor-1 &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Plasminogen_activator_inhibitor-1">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Plasminogen%20activator%20inhibitor%201%22">P</a></td>
+	<td>4-43 &mu;g/L, 4-43 ng/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Protein C, total antigen &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Protein_C">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003659.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22protein%20C%22">P</a></td>
+	<td>70-140%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Protein C, functional &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Protein_C">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003659.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22protein%20C%22">P</a></td>
+	<td>70-130%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Protein S, total antigen &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Protein_S">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003660.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22protein%20S%22">P</a></td>
+	<td>70-140%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Protein S, functional &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Protein_S">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003660.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22protein%20S%22">P</a></td>
+	<td>65-140%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Protein S, free antigen &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Protein_S">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003660.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22protein%20S%22">P</a></td>
+	<td>70-140%</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Prothrombin time &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Prothrombin_time">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003652.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22prothrombin%20time%22">P</a></td>
+	<td>12.4-15.4 s</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Coagulation</td>
+	<td>Thrombin time &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Thrombin_time">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22thrombin%20time%22">P</a></td>
+	<td>15.3-18.5 s</td>
+	<td>plasma</td>
+</tr>
+
+<!-- <tr>
+	<td>Hematology</td>
+	<td>Viscosity, plasma</td>
+	<td>1.7-2.1</td>
+	<td>plasma</td>
+</tr>-->
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Erythrocyte count &nbsp; &nbsp; W M P </td>
+	<td>Males: 4.30-5.60 x 10<sup>12</sup>/L, 4.30-5.60 x 10<sup>6</sup>/mm<sup>3</sup><br />Females: 4.00-5.20 x 10<sup>12</sup>/L, 4.00-5.20 x 10<sup>6</sup>/mm<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Erythrocyte sed. rate &nbsp; &nbsp; W M P </td>
+	<td>Males: 0-15 mm/h<br />Females: 0-20 mm/h</td>
+	<td>whole blood</td>
+</tr>
+<!-- <tr>
+	<td>Hematology, red cell</td>
+	<td>Haptoglobin, serum</td>
+	<td>0.5-2.2 g/L, 50-220 mg/dL</td>
+	<td></td>
+</tr> -->
+<!-- <tr>
+	<td>Hematology, red cell</td>
+	<td>G6PDH</td>
+	<td>< 2400 s, < 40 min UNITS ????</td>
+	<td>whole blood</td>
+</tr> -->
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hematocrit (HCT) &nbsp; &nbsp; W M P </td>
+	<td>Males: 38.8-46.4%<br />Females: 35.4-44.4%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin, glycosylated (HbA<sub>1C</sub>) &nbsp; &nbsp; W M P </td>
+	<td>4-6%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin &nbsp; &nbsp; W M P </td>
+	<td>0.6-5.0 mg/dL (6-50 mg/L)</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin &nbsp; &nbsp; W M P </td>
+	<td>Males: 133-162 g/L, 13.3-16.2 mg/dL<br />Females: 120-158 g/L, 12.0-15.8 mg/dL</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin A &nbsp; &nbsp; W M P </td>
+	<td>95-98%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin A2 &nbsp; &nbsp; W M P </td>
+	<td>1.5-3.1%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Hemoglobin F &nbsp; &nbsp; W M P </td>
+	<td>0-2.0%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Mean corpuscular hemoglobin (MCH) &nbsp; &nbsp; W M P </td>
+	<td>26.7-31.9 pg/cell, 323-359 g/L, 32.3-35.9 g/dL</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Mean corpuscular volume (MCV) &nbsp; &nbsp; W M P </td>
+	<td>79-93.3 fL, 79-93.3 &mu;m<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Mean corpuscular Hb of reticulocytes (CH) &nbsp; &nbsp; W M P </td>
+	<td>24-36 pg</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, red cell</td>
+	<td>Reticulocyte count &nbsp; &nbsp; W M P </td>
+	<td>Males: 0.8-2.3% RBCs<br />Females: 0.8-2.0% RBCs</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, thrombocyte</td>
+	<td>Mean platelet volume (MPV) &nbsp; &nbsp; W M P </td>
+	<td>9.00-12.95 fL, 9.00-12.95 &mu;m<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, thrombocyte</td>
+	<td>Platelet aggregation &nbsp; &nbsp; W M P </td>
+	<td>&gt; 65% in response to ADP, EPI, collagen, ristocetin, AA</td>
+	<td>platelet-rich plasma</td>
+</tr>
+<tr>
+	<td>Hematology, thrombocyte</td>
+	<td>Platelet count &nbsp; &nbsp; W M P </td>
+	<td>165-415 x 10<sup>9</sup>/L, 165-415 x 10<sup>3</sup>/mm<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, thrombocyte</td>
+	<td>Platelet mean volume &nbsp; &nbsp; W M P </td>
+	<td>6.4-11 fL, 6.4-11 &mu;m<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Leukocyte count &nbsp; &nbsp; W M P </td>
+	<td>3.54-9.06 x 10<sup>9</sup>/L, 3.54-9.06 x 10<sup>3</sup>/mm<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Neutrophils &nbsp; &nbsp; W M P </td>
+	<td>40-70%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Bands &nbsp; &nbsp; W M P </td>
+	<td>0-5%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Lymphocytes &nbsp; &nbsp; W M P </td>
+	<td>20-50%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Monocytes &nbsp; &nbsp; W M P </td>
+	<td>4-8%</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Eosinophils &nbsp; &nbsp; W M P </td>
+	<td>0-6%, 150-300 cells/&mu;L, 150-300 cells/mm<sup>3</sup></td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Hematology, white cell</td>
+	<td>Basophils &nbsp; &nbsp; W M P </td>
+	<td>0-2%</td>
+	<td>whole blood</td>
+</tr>
+<!-- <tr>
+	<td>Hematology</td>
+	<td>von Willebrand antigen</td>
+	<td>60-150%</td>
+	<td></td>
+</tr> -->
+
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Calcium, total &nbsp; &nbsp; W M P </td>
+	<td>2.2-2.6 mmol/L, 8.7-10.2 mg/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Calcium, ionized &nbsp; &nbsp; W M P </td>
+	<td>1.12-1.32 mmol/L, 4.5-5.3 mg/dL</td>
+	<td>whole blood</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Ceruloplasmin &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Ceruloplasmin">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003662.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Ceruloplasmin">P</a></td>
+	<td>250-630 mg/L, 25-36 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Chloride &nbsp; &nbsp; W M P </td>
+	<td>102-109 mmol/L, 102-109 meq/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Ferritin &nbsp; &nbsp; W M P </td>
+	<td>Males: 29-248 &mu;g/L, 29-248 ng/mL<br />Females: 10-150 &mu;g/L, 10-150 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Iron &nbsp; &nbsp; W M P </td>
+	<td>7-25 &mu;mol/L, 41-1141 &mu;g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Iron-binding capacity, total (TIBC) &nbsp; &nbsp; W M P </td>
+	<td>45-73 &mu;mol/L, 251-406 &mu;g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Iron-binding capacity, saturation &nbsp; &nbsp; W M P </td>
+	<td>16-35%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Magnesium &nbsp; &nbsp; W M P </td>
+	<td>0.62-0.95 mmol/L, 1.5-2.3 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Phosphorus, inorganic &nbsp; &nbsp; W M P </td>
+	<td>0.81-1.4 mmol/L, 2.5-4.3 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Potassium &nbsp; &nbsp; W M P </td>
+	<td>3.5-5.0 mmol/L, 3.5-5.0 meq/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Sodium &nbsp; &nbsp; W M P </td>
+	<td>136-146 mmol/L, 136-146 meq/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Ion, trace metal, etc.</td>
+	<td>Transferrin &nbsp; &nbsp; W M P </td>
+	<td>2.0-4.0 g/L, 200-400 mg/dL</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Lipid</td>
+	<td>HDL cholesterol &nbsp; &nbsp; W M P </td>
+	<td>Low: &lt;40 mg/dL, 1.03 mmol/L; High: &gt; 60 mg/dL, 1.55 mmol/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Lipid</td>
+	<td>LDL cholesterol &nbsp; &nbsp; W M P </td>
+	<td>Optimal: &lt;100 mg/dL, 2.59 mmol/L; High: 160-189 mg/dL, 4.14-4.89 mmol/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Lipid</td>
+	<td>Triglycerides &nbsp; &nbsp; W M P </td>
+	<td>30-200 mg/dL, 0.34-2.26 mmol/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Lipid</td>
+	<td>Total cholesterol &nbsp; &nbsp; W M P </td>
+	<td>Desirable: &lt;200 mg/dL, 5.17 mmol/L; High: &gt;240 mg/dL, 6.21 mmol/L</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Liver function</td>
+	<td>Alanine transaminase (ALT, SGPT)  &nbsp; &nbsp; W M P</td>
+	<td>0.12-0.70 &mu;kat/L, 7-41 U/L)</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Albumin &nbsp; &nbsp; W M P</td>
+	<td>Male: 40-50 g/L, 4.0-5.0 g/dL<br />Female: 41-53 g/L, 4.1-5.3 g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Aspartate transaminase (AST, SGOT)  &nbsp; &nbsp; W M P</td>
+	<td>0.20-0.65 &mu;kat/L, 12-38 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Bilirubin, total  &nbsp; &nbsp; W M P</td>
+	<td>5.1-22 &mu;mol/L, 0.3-1.3 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Bilirubin, direct  &nbsp; &nbsp; W M P</td>
+	<td>1.7-6.8 &mu;mol/L, 0.1-0.4 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Bilirubin, indirect  &nbsp; &nbsp; W M P</td>
+	<td>3.4-15.2 &mu;mol/L, 0.2-0.9 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Phosphatase, alkaline  &nbsp; &nbsp; W M P</td>
+	<td>0.56-1.63 nkat/L, 33-96 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein, total  &nbsp; &nbsp; W M P</td>
+	<td>67-86 g/L, 6.7-8.6 g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein, Albumin &nbsp; &nbsp; W M P</td>
+	<td>35-55 g/L, 3.5-5.5 g/dL, 50-60%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein,  Globulin &nbsp; &nbsp; W M P</td>
+	<td>20-35 g/L, 2.0-3.5 g/dL, 40-50%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein,  Alpha<sub>1</sub> &nbsp; &nbsp; W M P</td>
+	<td>2-4 g/L, 0.2-0.4 g/dL, 4.2-7.2%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein,  Alpha<sub>2</sub>&nbsp; &nbsp; W M P</td>
+	<td>5-9 g/L, 0.5-0.9 f/dL, 6.8-12%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein,  Beta &nbsp; &nbsp; W M P</td>
+	<td>6-11 g/L, 0.6-1.1 g/dL, 9.3-15%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Liver function</td>
+	<td>Protein,  Gamma &nbsp; &nbsp; W M P</td>
+	<td>7-17 g/L, 0.7-1.7 g/dL, 13-23%</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Metabolite</td>
+	<td>Acetoacetate &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Acetoacetate">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=acetoacetate">P</a></td>
+	<td>20-99 &mu;mol/L, 0.2-1.0 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Ammonia as NH<sub>3</sub> &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Ammonia">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003506.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=ammonia">P</a></td>
+	<td>11-35 &mu;mol/L, 19-60 &mu;g/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Creatinine &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Creatinine">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003475.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=creatinine">P</a></td>
+	<td>Males: 53-106 &mu;mol/L, 0.6-1.2 ng/mL<br />Females: 44-80 &mu;mol/L, 0.5-0.9 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Fatty Acids, free non-esterified &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Free_fatty_acids">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22free%20Fatty%20Acids%22">P</a></td>
+	<td>&lt;0.28-0.89 mmol/L, &lt;8-25 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Fructosamine &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Fructosamine">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=fructosamine">P</a></td>
+	<td>&lt;285 &mu;mol/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Glucose, fasting &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Glucose">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003482.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22fasting%20glucose%22">P</a></td>
+	<td>4.2-6.1 mmol/L, 75-110 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Homocysteine &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Homocysteine">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Homocysteine">P</a></td>
+	<td>4.4-10.8 &mu;mol/L</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Beta-hydroxybutyrate &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Beta-hydroxybutyrate">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Beta-hydroxybutyrate">P</a></td>
+	<td>0-290 &mu;mol/L, 0-3 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Lactate &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Lactic_acid">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003507.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Lactate">P</a></td>
+	<td>arterial: 0.5-1.6 mmol/L, 4.5-114.4 mg/dL<br />venous: 0.5-2.2 mmol/L, 4.5-19.8 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Lipoprotein(a) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Lipoprotein%28a%29">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/007262.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Lipoprotein%28a%29">P</a></td>
+	<td>0-300 mg/L, 0-30 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Metanephrine &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Metanephrine">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=metanephrine">P</a></td>
+	<td>&lt;0.5 nmol/L, &lt;100 pg/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Pyruvate (arterial or venous) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Pyruvate">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=pyruvate">P</a></td>
+	<td>arterial: 40-130 &mu;mol/L, 0.35-1.14 mg/dL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Pyruvate &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Pyruvate">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=pyruvate">P</a></td>
+	<td>67-86 g/L, 6.7-8.6 g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Urea nitrogen (BUN) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Urea_nitrogen">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003474.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22urea%20nitrogen%22%20OR%20BUN">P</a></td>
+	<td>2.5-7.1 mmol/L, 7-20 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Metabolite</td>
+	<td>Uric Acid &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Uric_acid">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003476.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22uric%20acid%22">P</a></td>
+	<td>Males: 0.18-0.41 &mu;mol/L, 3.1-7.0 mg/dL<br />Females: 0.15-0.33 &mu;mol/L, 2.5-5.6 mg/dL</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Aldolase (Fructose-bisphosphate aldolase) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Aldolase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003566.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=aldolase">P</a></td>
+	<td>26-138 nkat/L, 1.5-8.1 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Alpha 1-antitrypsin &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Alpha_1-antitrypsin">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003715.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Alpha%201-antitrypsin%22">P</a></td>
+	<td>1.0-2.0 g/L, 100-200 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Amylase &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Amylase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003464.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=amylase">P</a></td>
+	<td>0.34-1.6 &mu;kat/L, 20-96 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Angiotensin converting enz. (ACE) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Angiotensin-converting_enzyme">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003567.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Angiotensin%20converting%20enzyme%22">P</a></td>
+	<td>0.15-1.1 &mu;nkat/L, 9-67 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Cholinesterase &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Cholinesterase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003358.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=cholinesterase">P</a></td>
+	<td>5-12 kU/L, 5-12 U/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Gamma-glutamyltransferase &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Gamma-glutamyltransferase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003458.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Gamma-glutamyltransferase">P</a></td>
+	<td>0.15-0.99 &mu;kat/L, 9-58 U/L</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Lactate dehydrogenase &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Lactate_dehydrogenase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003471.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Lactate%20dehydrogenase%22">P</a></td>
+	<td>2.0-3.8 &mu;kat/L, 115-221 U/L<br />Fract 1: 14-26%, Fract 2: 29-39%, Fract 3: 20-26%, Fract 4: 8-16%, Fract 5: 6-16%</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Misc. enzyme</td>
+	<td>Lipase &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Lipase">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003465.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=lipase">P</a></td>
+	<td>0.51-0.73 &mu;kat/L, 3-43 U/L</td>
+	<td>serum</td>
+</tr>
+<!-- <tr>
+	<td>Misc. enzyme</td>
+	<td>Phosphatase, acid</td>
+	<td>0-0.90 nkat/L, 0-5.5 U/L</td>
+	<td></td>
+</tr> -->
+
+<tr>
+	<td>Tumor marker</td>
+	<td>Alpha-fetoprotein (adult) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Alpha_fetoprotein">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003573.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Alpha-fetoprotein">P</a></td>
+	<td>0-8.5 &mu;g/L, 0-8.5 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>CA-125 (MUC16) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/CA-125">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/007217.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=CA-125">P</a></td>
+	<td>0-35 kU/L, 0-35 U/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>CA19-9 &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/CA_19-9">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=CA19-9">P</a></td>
+	<td>0-37 kU/L, 0-37 U/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>CA 15-3 (MUC1) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/CA_15-3">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=CA%2015-3">P</a></td>
+	<td>0-34 kU/L, 0-34 U/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>CA 27-29 &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Ca_27-29">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22CA%2027-29%22">P</a></td>
+	<td>0-40 kU/L, 0-40 U/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>Calcitonin &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Calcitonin">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=calcitonin">P</a></td>
+	<td>Males: 3-26 ng/L, 3-36 pg/mL<br />Females: 2-17 ng/L, 2-17 pg/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>Carcinoembryonic antigen (CEA) &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Carcinoembryonic_antigen">W</a>  &nbsp;  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Carcinoembryonic%20antigen%22">P</a></td>
+	<td>Nonsmokers: 0-3.0 &mu;g/L, 0-3.0 ng/mL<br />Smokers: 0-5.0 &mu;g/L, 0-5.0 ng/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Tumor marker</td>
+	<td>Prostate specific antigen (PSA), males &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Prostate_specific_antigen">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/003346.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22Prostate%20specific%20antigen%22">P</a></td>
+	<td>&lt;40 yrs: 0-2.0 &mu;g/L, 0-2.0 ng/mL<br />&gt;40 yrs: 0-4.0 &mu;g/L, 0-4.0 ng/mL<br />Free PSA in males 45-75 yrs w/ PSA of 4-20 &mu;g/mL: &gt;25% suggestive of BPH</td>
+	<td>serum</td>
+</tr>
+
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin A  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_A">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002400.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20a%22">P</a></td>
+	<td>0.7-3.5 &mu;mol/L, 20-100 &mu;g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin B1 (thiamine)  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_B1">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002401.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20b1%22">P</a></td>
+	<td>0-75 nmol/L, 0-2 &mu;g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin B2 (riboflavin)  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_B2">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002411.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20b2%22">P</a></td>
+	<td>106-638 nmol/L, 4-24 &mu;g/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin B6  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_B6">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002402.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20b6%22">P</a></td>
+	<td>20-121 nmol/L, 5-30 ng/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin B12  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_B12">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002403.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20b12%22">P</a></td>
+	<td>206-735 pmol/L, 279-996 pg/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin C (ascorbate)  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_C">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002404.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20c%22">P</a></td>
+	<td>23-57 &mu;mol/L, 0.4-1.0 mg/dL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin D3 (1,25-dihydroxy)  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_D">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002405.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20d3%22">P</a></td>
+	<td>60-108 pmol/L, 25-45 pg/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin D3 (25-hydroxy)  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_D">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002405.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20d3%22">P</a></td>
+	<td>Summer: 37.4-200 nmol/L, 15-80 ng/mL<br />Winter: 34.9-105 nmol/L, 14-42 ng/mL</td>
+	<td>plasma</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin E  &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_E">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002406.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20e%22">P</a></td>
+	<td>12-42 &mu;mol/L, 5-18 &mu;g/mL</td>
+	<td>serum</td>
+</tr>
+<tr>
+	<td>Vitamin</td>
+	<td>Vitamin K &nbsp; &nbsp; <a href="http://en.wikipedia.org/wiki/Vitamin_K">W</a> <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002407.htm">M</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=%22vitamin%20k%22">P</a></td>
+	<td>0.29-2.64 nmol/L, 0.13-1.19 ng/mL</td>
+	<td>serum</td>
+</tr>
+
+</tbody>
+</table>
+</div>&nbsp; &nbsp; Made with <a href="http://tablesorter.com/docs">tablesorter</a> and <a href="http://www.jquery.com">jquery</a> and inspired by <a href="http://en.wikipedia.org/wiki/Reference_ranges_for_blood_tests">Reference ranges for blood tests</a>
+<br />&nbsp; &nbsp; Peter A. Ensminger, <a href="mailto:ensmingr@gmail.com">ensmingr@gmail.com</a>
+<br />&nbsp; &nbsp; Updated: Sept 14, 2012
+<!-- google analytics -->
+<br />&nbsp; &nbsp; Validated: CSS 3, XHTML 1.0 transitional
+<br />&nbsp; &nbsp; ...................<br />
+</body>
+</html>

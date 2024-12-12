@@ -1,0 +1,85 @@
+/* table */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 9pt;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 11pt;
+	padding: 1px;}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;}
+table.tablesorter tbody td {
+	color: black;
+	padding: 2px;
+	background-color: #FFF;
+	vertical-align: top;}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #8dbdd8;}
+
+/* headers */
+h1 {
+	color:black; 
+	font-family: arial, verdana;
+	font-size:350%; }
+h2 {
+	color:black;
+	font-family: arial, verdana;
+	font-size:170%; }
+h3 {
+	color:black;
+	font-family: arial, verdana;
+	font-size:110%; }	
+	
+
+/* links */
+a:link {
+	color:blue;
+	font-weight: lighter;
+	background-color:transparent; 
+	border-style:solid; 
+	border-width:1px;
+	border-color:#C0C0C0;
+	padding:0px 2px 0px 2px;
+	text-decoration:none;}    /* unvisited link */
+a:visited {
+	color:blue;
+	font-weight: lighter;
+	background-color:transparent; 
+	border-style:solid; 
+	border-width:1px; 
+	border-color:#C0C0C0;
+	padding:0px 2px 0px 2px;
+	text-decoration:none;} /* visited link */
+a:hover {
+	color:red;
+	font-weight: lighter;
+	background-color:yellow; 
+	border-style:solid; 
+	border-width:1px; 
+	border-color:red;
+	padding:0px 2px 0px 2px;
+	text-decoration:none;}   /* mouse over link */
+a:active {
+	color: red;
+	font-weight: lighter;
+	background-color:yellow; 
+	border-style:solid; 
+	border-width:1px; 
+	border-color:red;
+	padding:0px 2px 0px 2px;
+	text-decoration:none;}  /* selected link */
